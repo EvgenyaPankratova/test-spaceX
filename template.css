@@ -1,0 +1,897 @@
+/* Сброс css (START) */
+@import "./nullstyle.css";
+/* Сброс css (END) */
+/* Шрифты (START) */
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("fonts/ofont.ru_MuseoSansCyrl300.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("fonts/ofont.ru_MuseoSansCyrl100.ttf");
+  font-weight: light;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("fonts/museosanscyrl-900.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("fonts/ofont.ru_MuseoSansCyrl700.ttf");
+  font-weight: 700;
+}
+/* Шрифты (END) */
+body {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 300;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  background: no-repeat url(./images/background.png) center / cover;
+  width: 100%;
+  height: 100vh;
+  max-width: 1920px;
+  max-height: 660px;
+  padding: 1.5em 14em;
+  align-items: center;
+}
+/* Header (START) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo__img {
+  width: 14em;
+  padding: 0.8em;
+}
+.header__logo_block a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  line-height: 3.5em;
+}
+
+.header__logo_block a:before {
+  top: -2px;
+  left: -2px;
+}
+.header__logo_block a:after {
+  top: -2px;
+  right: -2px;
+}
+.header__logo_block span:before {
+  bottom: -2px;
+  left: -2px;
+}
+.header__logo_block span:after {
+  bottom: -2px;
+  right: -2px;
+}
+
+.header__logo_block a:hover {
+  color: white;
+  background: rgba(255, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 50px;
+  background: #16171f;
+  border: 1px solid gray;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  line-height: 3.5em;
+}
+
+.header__logo_block a:hover:before,
+.header__logo_block a:hover:after,
+.header__logo_block a:hover span:before,
+.header__logo_block a:hover span:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  transition: 1s;
+  mix-blend-mode: hue;
+}
+
+.header__logo_block {
+  position: relative;
+  margin-left: 10%;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.header__nav__item {
+  list-style-type: none;
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+.header__nav__item:hover {
+  border-bottom: 1px solid gray;
+}
+/* Header (END) */
+
+/* Main (START) */
+.main {
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  text-align: left;
+}
+
+/* Title (START) */
+.main__title__block {
+  grid-area: 1 / 1 / 2 / 3;
+  height: 25vh;
+  margin-top: 2em;
+}
+.main__title__block__title {
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.main__title__block__title h1 {
+  font-weight: 700;
+
+  background: #f7e7e4;
+  background: -webkit-linear-gradient(
+    to right,
+    #f7e7e4 37%,
+    #e28d5e 58%,
+    #ff3b00 70%,
+    rgba(255, 255, 255, 0) 91%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #f7e7e4 37%,
+    #e28d5e 58%,
+    #ff3b00 70%,
+    rgba(255, 255, 255, 0) 91%
+  );
+  background: linear-gradient(
+    to right,
+    #f7e7e4 37%,
+    #e28d5e 58%,
+    #ff3b00 70%,
+    rgba(255, 255, 255, 0) 91%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__title__block__title span {
+  background: #f92900;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #8d2303 40%,
+    #ffffff00 60%
+  );
+  background: -moz-linear-gradient(to bottom right, #8d2303 40%, #ffffff00 60%);
+  background: linear-gradient(to bottom right, #8d2303 40%, #ffffff00 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__title__block__subtitle h5 {
+  font-weight: light;
+  background: #f7e7e4;
+  background: -webkit-linear-gradient(to right, #f7e7e4 36%, #fa8a68 53%);
+  background: -moz-linear-gradient(to right, #f7e7e4 36%, #fa8a68 53%);
+  background: linear-gradient(to right, #f7e7e4 36%, #fa8a68 53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main__title__block__button {
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+}
+.main__title__block__button a {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 50px;
+  border: 1px solid #284167;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 3.5em;
+}
+
+.main__title__block__button a:after {
+  top: -2px;
+  right: -2px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 2px 2px 3px rgba(255, 255, 255, 0);
+}
+.main__title__block__button span:before {
+  bottom: -2px;
+  left: -2px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 2px 2px 3px rgba(255, 255, 255, 0);
+}
+
+.main__title__block__button a:hover {
+  color: white;
+  background: rgba(255, 0, 0, 0);
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 50px;
+  background: #16171f;
+  border: 1px solid #284167;
+  border-image: linear-gradient(to right top, skyblue, #24599c, skyblue);
+  border-image-slice: 1;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 3.5em;
+}
+
+.main__title__block__button a:hover:before,
+.main__title__block__button a:hover:after,
+.main__title__block__button a:hover span:before,
+.main__title__block__button a:hover span:after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  transition: 1s;
+  mix-blend-mode: hue;
+}
+
+/* Title (END) */
+
+/* Profits (START) */
+.main__title__block__profits {
+  grid-area: 1 / 4 / 3 / 6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  font-weight: light;
+  font-size: 0.9em;
+  margin-left: 20%;
+}
+.main__title__block__profits__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.main__title__block__profits__item:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgb(255, 255, 255, 0.1) 90%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgb(255, 255, 255, 0.1) 90%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 25%,
+    rgb(255, 255, 255, 0.1) 90%
+  );
+}
+
+.main__title__block__profits__item__digit {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.main__title__block__profits__item__digit span {
+  font-size: 0.3em;
+  margin-left: 2px;
+}
+/* Profits (END) */
+/* Main (END) */
+
+/*  Медиа-запросы (START) */
+@media (max-width: 376px) {
+  body {
+    font-size: 10px;
+  }
+  .container {
+    padding: 0.5rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__logo_block {
+    margin-left: 0;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+  .header__logo_block a {
+    width: 120px;
+    height: 28px;
+    left: 0;
+    line-height: 3em;
+  }
+  .header__logo_block a:hover {
+    width: 120px;
+    height: 28px;
+  }
+  .header__nav__item {
+    margin-right: 1.1em;
+  }
+  .main {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__title__block {
+    margin-left: 0;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.2em;
+  }
+  .main__title__block__title h1 {
+    font-weight: 700;
+
+    background: #f7e7e4;
+    background: -webkit-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 88%,
+      #ff3b00 80%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 88%,
+      #ff3b00 80%
+    );
+    background: linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 88%,
+      #ff3b00 80%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 14px;
+  }
+  .main__title__block__button a {
+    left: 50%;
+    margin-top: -60px;
+    width: 120px;
+    height: 35px;
+    line-height: 3.2em;
+  }
+  .main__title__block__button a:hover {
+    width: 120px;
+    height: 35px;
+    line-height: 3.2em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-left: 0;
+    margin-top: -20px;
+  }
+  .main__title__block__profits__item {
+    height: 12vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 2em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  body {
+    font-size: 11px;
+  }
+  .container {
+    padding: 0.5rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__logo_block {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .header__logo_block a {
+    width: 150px;
+    height: 45px;
+    left: 0;
+    line-height: 3em;
+  }
+  .header__logo_block a:hover {
+    width: 150px;
+    height: 45px;
+  }
+  .main {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__title__block {
+    margin-left: 0;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.5em;
+  }
+  .main__title__block__title h1 {
+    font-weight: 700;
+
+    background: #f7e7e4;
+    background: -webkit-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 58%,
+      #ff3b00 70%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 58%,
+      #ff3b00 70%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    background: linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 58%,
+      #ff3b00 70%,
+      rgba(255, 255, 255, 0) 99%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 16px;
+  }
+  .main__title__block__button a {
+    left: 50%;
+    margin-top: -50px;
+    width: 120px;
+    height: 40px;
+    line-height: 3.5em;
+  }
+  .main__title__block__button a:hover {
+    width: 120px;
+    height: 40px;
+    line-height: 3.5em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 25px;
+    margin-left: 0;
+    margin-top: -10px;
+  }
+  .main__title__block__profits__item {
+    height: 12vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 2.7em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    padding: 1.5em 3rem;
+  }
+  .header__logo_block a {
+    width: 170px;
+    height: 48px;
+    left: 10px;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 170px;
+    height: 48px;
+  }
+  .main {
+    margin-top: 14%;
+  }
+  .main__title__block {
+    margin-left: 0;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    background: #f7e7e4;
+    background: -webkit-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 68%,
+      #ff3b00 99%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 68%,
+      #ff3b00 99%
+    );
+    background: linear-gradient(
+      to right,
+      #f7e7e4 37%,
+      #e28d5e 68%,
+      #ff3b00 99%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 20px;
+  }
+  .main__title__block__title span {
+    background: #f92900;
+    background: -webkit-linear-gradient(to bottom right, #8d2303 70%);
+    background: -moz-linear-gradient(to bottom right, #8d2303 70%);
+    background: linear-gradient(to bottom right, #8d2303 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .main__title__block__button a {
+    left: 80%;
+    width: 145px;
+    height: 40px;
+    line-height: 3.5em;
+  }
+  .main__title__block__button a:hover {
+    width: 145px;
+    height: 40px;
+    line-height: 3.5em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 7%;
+    margin-top: 10px;
+  }
+  .main__title__block__profits__item {
+    height: 15vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    font-size: 13px;
+  }
+  .container {
+    padding: 1.5em 4.5em;
+  }
+  .header__logo_block a {
+    width: 170px;
+    height: 51px;
+    left: -15px;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 170px;
+    height: 51px;
+  }
+  .main {
+    margin-top: 10%;
+  }
+  .main__title__block {
+    margin-left: -3em;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.3em;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 21px;
+  }
+  .main__title__block__button a {
+    left: 30%;
+    width: 160px;
+    height: 45px;
+    line-height: 3.5em;
+  }
+  .main__title__block__button a:hover {
+    width: 160px;
+    height: 45px;
+    line-height: 3.5em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin-left: 20%;
+  }
+  .main__title__block__profits__item {
+    height: 25vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 993px) and (max-width: 1100px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 1.5em 10em;
+  }
+  .header__logo_block a {
+    width: 190px;
+    height: 58px;
+    left: -15px;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 190px;
+    height: 58px;
+  }
+  .main {
+    margin-top: 8%;
+  }
+  .main__title__block {
+    margin-left: -3em;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.5em;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 24px;
+  }
+  .main__title__block__button a {
+    left: 30%;
+    width: 170px;
+    height: 55px;
+    line-height: 3.5em;
+  }
+  .main__title__block__button a:hover {
+    width: 170px;
+    height: 55px;
+    line-height: 3.5em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin-left: 20%;
+  }
+  .main__title__block__profits__item {
+    height: 25vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1700px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 1.5em 15em;
+  }
+  .header__logo_block a {
+    width: 250px;
+    height: 70px;
+    left: 2rem;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 250px;
+    height: 70px;
+  }
+  .main {
+    margin-top: 8%;
+  }
+  .main__title__block {
+    margin-left: 0;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.5em;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 24px;
+  }
+  .main__title__block__button a {
+    left: 50%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__button a:hover {
+    left: 50%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin-left: 20%;
+  }
+  .main__title__block__profits__item {
+    height: 25vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1920px) {
+  body {
+    font-size: 17px;
+  }
+  .container {
+    padding: 1.5em 20em;
+  }
+  .header__logo_block a {
+    width: 250px;
+    height: 70px;
+    left: 2rem;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 250px;
+    height: 70px;
+  }
+  .main {
+    margin-top: 8%;
+  }
+  .main__title__block {
+    margin-left: 0;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.5em;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 24px;
+  }
+  .main__title__block__button a {
+    left: 50%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__button a:hover {
+    left: 50%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin-left: 20%;
+  }
+  .main__title__block__profits__item {
+    height: 25vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+@media (min-width: 1921px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    padding: 1.5em 21em;
+  }
+  .header__logo_block a {
+    width: 250px;
+    height: 70px;
+    left: 2rem;
+    line-height: 3.5em;
+  }
+  .header__logo_block a:hover {
+    width: 250px;
+    height: 70px;
+  }
+  .main {
+    margin-top: 8%;
+  }
+  .main__title__block {
+    margin-left: 0.8rem;
+  }
+  .main__title__block__title {
+    letter-spacing: 0.7px;
+  }
+  .main__title__block__title h1 {
+    font-size: 2.5em;
+  }
+  .main__title__block__subtitle h5 {
+    font-size: 24px;
+  }
+  .main__title__block__button a {
+    left: 52%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__button a:hover {
+    left: 52%;
+    width: 210px;
+    height: 60px;
+    line-height: 3em;
+  }
+  .main__title__block__profits {
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin-left: 20%;
+  }
+  .main__title__block__profits__item {
+    height: 25vh;
+  }
+  .main__title__block__profits__item__digit {
+    font-size: 3em;
+    letter-spacing: 0.02em;
+  }
+}
+/*  Медиа-запросы (END) */
